@@ -6,7 +6,7 @@ namespace ProjectBackendDevelopment.Models
 {
     public class Sponsor
     {
-        public int SponsorId { get; set; }
+        public Guid SponsorId { get; set; }
         public string Name { get; set; }
 
         [JsonIgnore]
