@@ -3,11 +3,14 @@
 version: '3.4'
 
 services:
-  projectbackenddevelopment:
+  api:
     image: projectbackenddevelopment
     build:
       context: .
       dockerfile: ./Dockerfile
+    environment: 
+      - ASPNETCORE_URLS=http://+:5000
+      - ASPNETCORE_ENVIRONMENT=Docker
     ports:
-      - 5000
-      - 5001
+      - 5000:5000
+      - 5001:5000
