@@ -3,6 +3,15 @@
 version: '3.4'
 
 services:
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "<YourNewStrong@Passw0rd>"
+      ACCEPT_EULA: "Y"
+    ports: 
+      - 1433:1433 
+    volumes: 
+        - ./data:/var/opt/mssql/data
   api:
     image: projectbackenddevelopment
     build:
@@ -14,3 +23,5 @@ services:
     ports:
       - 5000:5000
       - 5001:5000
+    depends_on: 
+      - db
