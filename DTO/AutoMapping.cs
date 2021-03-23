@@ -8,6 +8,8 @@ namespace ProjectBackendDevelopment.DTO
     {
         public AutoMapping(){
             CreateMap<Sponsor, SponsorDTO>();
+            CreateMap<Team, TeamDTO>();
+            CreateMap<Player, PlayerDTO>();
         }
         
     }

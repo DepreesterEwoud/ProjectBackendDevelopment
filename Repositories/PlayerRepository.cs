@@ -22,7 +22,13 @@ namespace ProjectBackendDevelopment.Repositories
 
         public async Task<List<Player>> GetPlayers()
         {
-            return await _context.Players.ToListAsync();
+            try{
+                return await _context.Players.ToListAsync();
+            }
+            catch(System.Exception ex){
+                throw ex;
+            }
+            
         }
     }
 }

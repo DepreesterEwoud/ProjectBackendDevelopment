@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ProjectBackendDevelopment.Config;
 using ProjectBackendDevelopment.DataContext;
+using ProjectBackendDevelopment.Repositories;
+using ProjectBackendDevelopment.Services;
 
 namespace ProjectBackendDevelopment
 {
@@ -28,17 +30,23 @@ namespace ProjectBackendDevelopment
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(Startup));
 
             services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
-
             services.AddDbContext<SponsorContext>();
+
             services.AddControllers();
+            services.AddTransient<ISponsorContext,SponsorContext>();
+            services.AddTransient<IPlayerRepository,PlayerRepository>();
+            services.AddTransient<ISponsorRepository,SponsorRepository>();
+            services.AddTransient<ITeamRepository,TeamRepository>();
+
+            services.AddTransient<ISponsorService,SponsorService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjectBackendDevelopment", Version = "v1" });
             });
-            services.AddTransient<ISponsorContext,SponsorContext>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

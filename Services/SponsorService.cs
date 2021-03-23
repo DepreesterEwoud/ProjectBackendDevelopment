@@ -8,29 +8,39 @@ using ProjectBackendDevelopment.Repositories;
 
 namespace ProjectBackendDevelopment.Services
 {
-    public class SponsorService
+    public interface ISponsorService
+    {
+        Task<SponsorDTO> AddSponsor(SponsorDTO sponsor);
+        Task<List<PlayerDTO>> GetPlayers();
+        Task<Sponsor> GetSponsor(Guid sponsorId);
+        Task<List<Sponsor>> GetSponsors();
+        Task<List<TeamDTO>> GetTeams();
+    }
+
+    public class SponsorService : ISponsorService
     {
         private IPlayerRepository _playerRepository;
         private ISponsorRepository _sponsorRepository;
-        private TeamRepository _teamRepository;
+        private ITeamRepository _teamRepository;
         private IMapper _mapper;
 
-        public SponsorService(IMapper mapper, IPlayerRepository playerRepository, ISponsorRepository sponsorRepository, TeamRepository teamRepository)
+        public SponsorService(IMapper mapper, IPlayerRepository playerRepository, ISponsorRepository sponsorRepository, ITeamRepository teamRepository)
         {
             _mapper = mapper;
             _playerRepository = playerRepository;
-            _sponsorRepository =sponsorRepository;
+            _sponsorRepository = sponsorRepository;
             _teamRepository = teamRepository;
         }
 
-        public async Task<Sponsor> GetSponsor(Guid sponsorId){
+        public async Task<Sponsor> GetSponsor(Guid sponsorId)
+        {
             try
             {
                 return await _sponsorRepository.GetSponsor(sponsorId);
             }
             catch (System.Exception ex)
             {
-                
+
                 throw ex;
             }
         }
@@ -39,7 +49,7 @@ namespace ProjectBackendDevelopment.Services
         {
             return await _sponsorRepository.GetSponsors();
         }
-        public async Task<SponsorDTO> AddSneaker(SponsorDTO sponsor)
+        public async Task<SponsorDTO> AddSponsor(SponsorDTO sponsor)
         {
             try
             {
@@ -49,7 +59,7 @@ namespace ProjectBackendDevelopment.Services
                 newSponsor.SponsorPlayers = new List<SponsorPlayer>();
                 foreach (var playerid in sponsor.Players)
                 {
-                    newSponsor.SponsorPlayers.Add(new SponsorPlayer() { PlayerId = playerid});
+                    newSponsor.SponsorPlayers.Add(new SponsorPlayer() { PlayerId = playerid });
                 }
                 await _sponsorRepository.AddSneaker(newSponsor);
                 return sponsor;
@@ -61,13 +71,13 @@ namespace ProjectBackendDevelopment.Services
             }
         }
 
-        public async Task<List<Team>> GetTeams()
+        public async Task<List<TeamDTO>> GetTeams()
         {
-            return await _teamRepository.GetTeams();
+            return _mapper.Map<List<TeamDTO>>(await _teamRepository.GetTeams());
         }
-        public async Task<List<Player>> GetPlayers()
+        public async Task<List<PlayerDTO>> GetPlayers()
         {
-            return await _playerRepository.GetPlayers();
+            return _mapper.Map<List<PlayerDTO>>(await _playerRepository.GetPlayers());
         }
     }
 }

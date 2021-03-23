@@ -25,7 +25,7 @@ namespace ProjectBackendDevelopment.DataContext
         public DbSet<Team> Teams { get; set; }
         public DbSet<SponsorPlayer> SponsorPlayers { get; set; }
         private ConnectionStrings _connectionStrings;
-        public SponsorContext(DbContextOptions<SponsorContext> options, IOptions<ConnectionStrings> connectionStrings)
+        public SponsorContext(DbContextOptions<SponsorContext> options, IOptions<ConnectionStrings> connectionStrings): base(options)
         {
             _connectionStrings = connectionStrings.Value;
         }
