@@ -8,7 +8,12 @@ using ProjectBackendDevelopment.Models;
 
 namespace ProjectBackendDevelopment.Repositories
 {
-    public class TeamRepository
+    public interface ITeamRepository
+    {
+        Task<List<Team>> GetTeams();
+    }
+
+    public class TeamRepository : ITeamRepository
     {
         private ISponsorContext _context;
         public TeamRepository(ISponsorContext context)

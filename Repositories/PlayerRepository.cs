@@ -7,7 +7,12 @@ using ProjectBackendDevelopment.Models;
 
 namespace ProjectBackendDevelopment.Repositories
 {
-    public class PlayerRepository
+    public interface IPlayerRepository
+    {
+        Task<List<Player>> GetPlayers();
+    }
+
+    public class PlayerRepository : IPlayerRepository
     {
         private ISponsorContext _context;
         public PlayerRepository(ISponsorContext context)
