@@ -24,7 +24,7 @@ namespace ProjectBackendDevelopment.Repositories
         }
         public async Task<List<Sponsor>> GetSponsors()
         {
-            return await _context.Sponsors.Include(s => s.SponsorPlayers).Include(s => s.Team).ToListAsync();
+            return await _context.Sponsors.Include(s => s.Team).Include(s => s.SponsorPlayers).ThenInclude(s => s.Player).ToListAsync();
         }
         public async Task<Sponsor> AddSneaker(Sponsor sponsor)
         {
