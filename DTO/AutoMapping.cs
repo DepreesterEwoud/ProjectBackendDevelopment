@@ -7,7 +7,7 @@ namespace ProjectBackendDevelopment.DTO
     public class AutoMapping : Profile
     {
         public AutoMapping(){
-            CreateMap<Sponsor, SponsorDTO>();
+            CreateMap<SponsorDTO, Sponsor>();
             CreateMap<Team, TeamDTO>();
             CreateMap<Player, PlayerDTO>();
         }
