@@ -3,23 +3,21 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProjectBackendDevelopment.Migrations
 {
-    public partial class firstmigration : Migration
+    public partial class allrelations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Players",
+                name: "RugNummers",
                 columns: table => new
                 {
-                    PlayerId = table.Column<int>(type: "int", nullable: false)
+                    RugId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Age = table.Column<int>(type: "int", nullable: false)
+                    RugNummerCijfer = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Players", x => x.PlayerId);
+                    table.PrimaryKey("PK_RugNummers", x => x.RugId);
                 });
 
             migrationBuilder.CreateTable(
@@ -35,6 +33,28 @@ namespace ProjectBackendDevelopment.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Teams", x => x.TeamId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Players",
+                columns: table => new
+                {
+                    PlayerId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Age = table.Column<int>(type: "int", nullable: false),
+                    RugNummerId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Players", x => x.PlayerId);
+                    table.ForeignKey(
+                        name: "FK_Players_RugNummers_RugNummerId",
+                        column: x => x.RugNummerId,
+                        principalTable: "RugNummers",
+                        principalColumn: "RugId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -81,14 +101,16 @@ namespace ProjectBackendDevelopment.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Players",
-                columns: new[] { "PlayerId", "Age", "FirstName", "LastName" },
+                table: "RugNummers",
+                columns: new[] { "RugId", "RugNummerCijfer" },
                 values: new object[,]
                 {
-                    { 1, 19, "Ewoud", "De Preester" },
-                    { 2, 19, "Alec", "Hantson" },
-                    { 3, 13, "Jarno", "Vanden Haesevelde" },
-                    { 4, 19, "Lara", "Desmet" }
+                    { 1, 4 },
+                    { 2, 9 },
+                    { 3, 2 },
+                    { 4, 3 },
+                    { 5, 5 },
+                    { 6, 6 }
                 });
 
             migrationBuilder.InsertData(
@@ -101,6 +123,23 @@ namespace ProjectBackendDevelopment.Migrations
                     { 3, "Munchen", "Germany", "Bayern" },
                     { 4, "Oudenaarde", "Belgium", "Mater" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "Players",
+                columns: new[] { "PlayerId", "Age", "FirstName", "LastName", "RugNummerId" },
+                values: new object[,]
+                {
+                    { 1, 19, "Ewoud", "De Preester", 1 },
+                    { 2, 19, "Robbe", "Raevens", 2 },
+                    { 3, 13, "Jarno", "Vanden Haesevelde", 3 },
+                    { 4, 19, "Lara", "Desmet", 4 }
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Players_RugNummerId",
+                table: "Players",
+                column: "RugNummerId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_SponsorPlayers_PlayerId",
@@ -123,6 +162,9 @@ namespace ProjectBackendDevelopment.Migrations
 
             migrationBuilder.DropTable(
                 name: "Sponsors");
+
+            migrationBuilder.DropTable(
+                name: "RugNummers");
 
             migrationBuilder.DropTable(
                 name: "Teams");

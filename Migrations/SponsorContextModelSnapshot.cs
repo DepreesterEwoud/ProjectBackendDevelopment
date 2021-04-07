@@ -35,7 +35,13 @@ namespace ProjectBackendDevelopment.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RugNummerId")
+                        .HasColumnType("int");
+
                     b.HasKey("PlayerId");
+
+                    b.HasIndex("RugNummerId")
+                        .IsUnique();
 
                     b.ToTable("Players");
 
@@ -45,28 +51,79 @@ namespace ProjectBackendDevelopment.Migrations
                             PlayerId = 1,
                             Age = 19,
                             FirstName = "Ewoud",
-                            LastName = "De Preester"
+                            LastName = "De Preester",
+                            RugNummerId = 1
                         },
                         new
                         {
                             PlayerId = 2,
                             Age = 19,
-                            FirstName = "Alec",
-                            LastName = "Hantson"
+                            FirstName = "Robbe",
+                            LastName = "Raevens",
+                            RugNummerId = 2
                         },
                         new
                         {
                             PlayerId = 3,
                             Age = 13,
                             FirstName = "Jarno",
-                            LastName = "Vanden Haesevelde"
+                            LastName = "Vanden Haesevelde",
+                            RugNummerId = 3
                         },
                         new
                         {
                             PlayerId = 4,
                             Age = 19,
                             FirstName = "Lara",
-                            LastName = "Desmet"
+                            LastName = "Desmet",
+                            RugNummerId = 4
+                        });
+                });
+
+            modelBuilder.Entity("ProjectBackendDevelopment.Models.RugNummer", b =>
+                {
+                    b.Property<int>("RugId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("RugNummerCijfer")
+                        .HasColumnType("int");
+
+                    b.HasKey("RugId");
+
+                    b.ToTable("RugNummers");
+
+                    b.HasData(
+                        new
+                        {
+                            RugId = 1,
+                            RugNummerCijfer = 4
+                        },
+                        new
+                        {
+                            RugId = 2,
+                            RugNummerCijfer = 9
+                        },
+                        new
+                        {
+                            RugId = 3,
+                            RugNummerCijfer = 2
+                        },
+                        new
+                        {
+                            RugId = 4,
+                            RugNummerCijfer = 3
+                        },
+                        new
+                        {
+                            RugId = 5,
+                            RugNummerCijfer = 5
+                        },
+                        new
+                        {
+                            RugId = 6,
+                            RugNummerCijfer = 6
                         });
                 });
 
@@ -155,6 +212,17 @@ namespace ProjectBackendDevelopment.Migrations
                         });
                 });
 
+            modelBuilder.Entity("ProjectBackendDevelopment.Models.Player", b =>
+                {
+                    b.HasOne("ProjectBackendDevelopment.Models.RugNummer", "RugNummer")
+                        .WithOne("Player")
+                        .HasForeignKey("ProjectBackendDevelopment.Models.Player", "RugNummerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RugNummer");
+                });
+
             modelBuilder.Entity("ProjectBackendDevelopment.Models.Sponsor", b =>
                 {
                     b.HasOne("ProjectBackendDevelopment.Models.Team", "Team")
@@ -186,6 +254,11 @@ namespace ProjectBackendDevelopment.Migrations
             modelBuilder.Entity("ProjectBackendDevelopment.Models.Player", b =>
                 {
                     b.Navigation("SponsorPlayers");
+                });
+
+            modelBuilder.Entity("ProjectBackendDevelopment.Models.RugNummer", b =>
+                {
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("ProjectBackendDevelopment.Models.Sponsor", b =>

@@ -15,6 +15,7 @@ namespace ProjectBackendDevelopment.DataContext
         DbSet<Sponsor> Sponsors { get; set; }
         DbSet<Team> Teams { get; set; }
         DbSet<SponsorPlayer> SponsorPlayers { get; set; }
+        DbSet<RugNummer> RugNummers { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 
@@ -24,6 +25,7 @@ namespace ProjectBackendDevelopment.DataContext
         public DbSet<Sponsor> Sponsors { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<SponsorPlayer> SponsorPlayers { get; set; }
+        public DbSet<RugNummer> RugNummers { get; set; }
         private ConnectionStrings _connectionStrings;
         public SponsorContext(DbContextOptions<SponsorContext> options, IOptions<ConnectionStrings> connectionStrings): base(options)
         {
@@ -40,6 +42,7 @@ namespace ProjectBackendDevelopment.DataContext
         {
             modelBuilder.Entity<SponsorPlayer>()
                 .HasKey(cs => new { cs.SponsorId, cs.PlayerId });
+            
 
             modelBuilder.Entity<Team>().HasData(new Team()
             {
@@ -74,28 +77,62 @@ namespace ProjectBackendDevelopment.DataContext
                 PlayerId = 1,
                 FirstName = "Ewoud",
                 LastName = "De Preester",
-                Age = 19
+                Age = 19,
+                RugNummerId = 1
             });
             modelBuilder.Entity<Player>().HasData(new Player()
             {
                 PlayerId = 2,
-                FirstName = "Alec",
-                LastName = "Hantson",
-                Age = 19
+                FirstName = "Robbe",
+                LastName = "Raevens",
+                Age = 19,
+                RugNummerId = 2
             });
             modelBuilder.Entity<Player>().HasData(new Player()
             {
                 PlayerId = 3,
                 FirstName = "Jarno",
                 LastName = "Vanden Haesevelde",
-                Age = 13
+                Age = 13,
+                RugNummerId = 3
             });
             modelBuilder.Entity<Player>().HasData(new Player()
             {
                 PlayerId = 4,
                 FirstName = "Lara",
                 LastName = "Desmet",
-                Age = 19
+                Age = 19,
+                RugNummerId = 4
+            });
+            modelBuilder.Entity<RugNummer>().HasData(new RugNummer()
+            {
+                RugId = 1,
+                RugNummerCijfer = 4
+            });
+            modelBuilder.Entity<RugNummer>().HasData(new RugNummer()
+            {
+                RugId = 2,
+                RugNummerCijfer = 9
+            });
+            modelBuilder.Entity<RugNummer>().HasData(new RugNummer()
+            {
+                RugId = 3,
+                RugNummerCijfer = 2
+            });
+            modelBuilder.Entity<RugNummer>().HasData(new RugNummer()
+            {
+                RugId = 4,
+                RugNummerCijfer = 3
+            });
+            modelBuilder.Entity<RugNummer>().HasData(new RugNummer()
+            {
+                RugId = 5,
+                RugNummerCijfer = 5
+            });
+            modelBuilder.Entity<RugNummer>().HasData(new RugNummer()
+            {
+                RugId = 6,
+                RugNummerCijfer = 6
             });
         }
     }

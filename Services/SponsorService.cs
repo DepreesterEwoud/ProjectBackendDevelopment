@@ -22,9 +22,10 @@ namespace ProjectBackendDevelopment.Services
         private IPlayerRepository _playerRepository;
         private ISponsorRepository _sponsorRepository;
         private ITeamRepository _teamRepository;
+        private IRugNummerRepository _rugnummerRepository;
         private IMapper _mapper;
 
-        public SponsorService(IMapper mapper, IPlayerRepository playerRepository, ISponsorRepository sponsorRepository, ITeamRepository teamRepository)
+        public SponsorService(IMapper mapper, IPlayerRepository playerRepository, ISponsorRepository sponsorRepository, ITeamRepository teamRepository, IRugNummerRepository rugnummerRepository)
         {
             _mapper = mapper;
             _playerRepository = playerRepository;

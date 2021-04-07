@@ -40,6 +40,7 @@ namespace ProjectBackendDevelopment
             services.AddTransient<IPlayerRepository,PlayerRepository>();
             services.AddTransient<ISponsorRepository,SponsorRepository>();
             services.AddTransient<ITeamRepository,TeamRepository>();
+            services.AddTransient<IRugNummerRepository,RugNummerRepository>();
 
             services.AddTransient<ISponsorService,SponsorService>();
             services.AddSwaggerGen(c =>
