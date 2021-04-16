@@ -1,0 +1,1504 @@
+{
+  "ProjectBackendDevelopment.dll": {
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Program.cs": {
+      "ProjectBackendDevelopment.Program": {
+        "System.Void ProjectBackendDevelopment.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder ProjectBackendDevelopment.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Startup.cs": {
+      "ProjectBackendDevelopment.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration ProjectBackendDevelopment.Startup::get_Configuration()": {
+          "Lines": {
+            "28": 1
+          },
+          "Branches": []
+        },
+        "System.Void ProjectBackendDevelopment.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "32": 1,
+            "33": 1,
+            "35": 1,
+            "36": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 2,
+            "51": 1
+          },
+          "Branches": []
+        },
+        "System.Void ProjectBackendDevelopment.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 2,
+            "61": 1,
+            "63": 1,
+            "65": 1,
+            "67": 1,
+            "69": 1,
+            "70": 1,
+            "71": 1,
+            "72": 2,
+            "73": 1
+          },
+          "Branches": [
+            {
+              "Line": 56,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 7,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 56,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 56,
+              "Offset": 25,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void ProjectBackendDevelopment.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Services\\SponsorService.cs": {
+      "ProjectBackendDevelopment.Services.SponsorService": {
+        "System.Void ProjectBackendDevelopment.Services.SponsorService::.ctor(AutoMapper.IMapper,ProjectBackendDevelopment.Repositories.IPlayerRepository,ProjectBackendDevelopment.Repositories.ISponsorRepository,ProjectBackendDevelopment.Repositories.ITeamRepository,ProjectBackendDevelopment.Repositories.IRugNummerRepository)": {
+          "Lines": {
+            "28": 4,
+            "29": 4,
+            "30": 4,
+            "31": 4,
+            "32": 4,
+            "33": 4,
+            "34": 4
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Services.SponsorService/<GetSponsor>d__6": {
+        "System.Void ProjectBackendDevelopment.Services.SponsorService/<GetSponsor>d__6::MoveNext()": {
+          "Lines": {
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "47": 0
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Services.SponsorService/<GetSponsors>d__7": {
+        "System.Void ProjectBackendDevelopment.Services.SponsorService/<GetSponsors>d__7::MoveNext()": {
+          "Lines": {
+            "50": 1,
+            "51": 1,
+            "52": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Services.SponsorService/<AddSponsor>d__8": {
+        "System.Void ProjectBackendDevelopment.Services.SponsorService/<AddSponsor>d__8::MoveNext()": {
+          "Lines": {
+            "54": 1,
+            "56": 1,
+            "58": 1,
+            "60": 1,
+            "61": 3,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 1,
+            "66": 1,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "73": 1
+          },
+          "Branches": [
+            {
+              "Line": 61,
+              "Offset": 162,
+              "EndOffset": 97,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 162,
+              "EndOffset": 164,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "ProjectBackendDevelopment.Services.SponsorService/<GetTeams>d__9": {
+        "System.Void ProjectBackendDevelopment.Services.SponsorService/<GetTeams>d__9::MoveNext()": {
+          "Lines": {
+            "76": 1,
+            "77": 1,
+            "78": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Services.SponsorService/<GetPlayers>d__10": {
+        "System.Void ProjectBackendDevelopment.Services.SponsorService/<GetPlayers>d__10::MoveNext()": {
+          "Lines": {
+            "80": 1,
+            "81": 1,
+            "82": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Repositories\\PlayerRepository.cs": {
+      "ProjectBackendDevelopment.Repositories.PlayerRepository": {
+        "System.Void ProjectBackendDevelopment.Repositories.PlayerRepository::.ctor(ProjectBackendDevelopment.DataContext.ISponsorContext)": {
+          "Lines": {
+            "18": 4,
+            "19": 4,
+            "20": 4,
+            "21": 4
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Repositories.PlayerRepository/<GetPlayers>d__2": {
+        "System.Void ProjectBackendDevelopment.Repositories.PlayerRepository/<GetPlayers>d__2::MoveNext()": {
+          "Lines": {
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "28": 0,
+            "29": 0,
+            "32": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Repositories\\RugNummerRepository.cs": {
+      "ProjectBackendDevelopment.Repositories.RugNummerRepository": {
+        "System.Void ProjectBackendDevelopment.Repositories.RugNummerRepository::.ctor(ProjectBackendDevelopment.DataContext.ISponsorContext)": {
+          "Lines": {
+            "18": 4,
+            "19": 4,
+            "20": 4,
+            "21": 4
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Repositories.RugNummerRepository/<GetRugNummers>d__2": {
+        "System.Void ProjectBackendDevelopment.Repositories.RugNummerRepository/<GetRugNummers>d__2::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Repositories\\SponsorRepository.cs": {
+      "ProjectBackendDevelopment.Repositories.SponsorRepository": {
+        "System.Void ProjectBackendDevelopment.Repositories.SponsorRepository::.ctor(ProjectBackendDevelopment.DataContext.ISponsorContext)": {
+          "Lines": {
+            "21": 4,
+            "22": 4,
+            "23": 4,
+            "24": 4
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Repositories.SponsorRepository/<GetSponsors>d__2": {
+        "System.Void ProjectBackendDevelopment.Repositories.SponsorRepository/<GetSponsors>d__2::MoveNext()": {
+          "Lines": {
+            "26": 1,
+            "27": 1,
+            "28": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Repositories.SponsorRepository/<AddSneaker>d__3": {
+        "System.Void ProjectBackendDevelopment.Repositories.SponsorRepository/<AddSneaker>d__3::MoveNext()": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Repositories.SponsorRepository/<GetSponsor>d__4": {
+        "System.Void ProjectBackendDevelopment.Repositories.SponsorRepository/<GetSponsor>d__4::MoveNext()": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Repositories\\TeamRepository.cs": {
+      "ProjectBackendDevelopment.Repositories.TeamRepository": {
+        "System.Void ProjectBackendDevelopment.Repositories.TeamRepository::.ctor(ProjectBackendDevelopment.DataContext.ISponsorContext)": {
+          "Lines": {
+            "19": 4,
+            "20": 4,
+            "21": 4,
+            "22": 4
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Repositories.TeamRepository/<GetTeams>d__2": {
+        "System.Void ProjectBackendDevelopment.Repositories.TeamRepository/<GetTeams>d__2::MoveNext()": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "27": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Models\\Player.cs": {
+      "ProjectBackendDevelopment.Models.Player": {
+        "System.Int32 ProjectBackendDevelopment.Models.Player::get_PlayerId()": {
+          "Lines": {
+            "9": 14
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.Models.Player::get_FirstName()": {
+          "Lines": {
+            "10": 14
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.Models.Player::get_LastName()": {
+          "Lines": {
+            "11": 14
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.Models.Player::get_Age()": {
+          "Lines": {
+            "12": 14
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.Models.Player::get_RugNummerId()": {
+          "Lines": {
+            "14": 10
+          },
+          "Branches": []
+        },
+        "ProjectBackendDevelopment.Models.RugNummer ProjectBackendDevelopment.Models.Player::get_RugNummer()": {
+          "Lines": {
+            "15": 10
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<ProjectBackendDevelopment.Models.SponsorPlayer> ProjectBackendDevelopment.Models.Player::get_SponsorPlayers()": {
+          "Lines": {
+            "19": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Models\\RugNummer.cs": {
+      "ProjectBackendDevelopment.Models.RugNummer": {
+        "System.Int32 ProjectBackendDevelopment.Models.RugNummer::get_RugId()": {
+          "Lines": {
+            "10": 12
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.Models.RugNummer::get_RugNummerCijfer()": {
+          "Lines": {
+            "11": 12
+          },
+          "Branches": []
+        },
+        "ProjectBackendDevelopment.Models.Player ProjectBackendDevelopment.Models.RugNummer::get_Player()": {
+          "Lines": {
+            "12": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Models\\Sponsor.cs": {
+      "ProjectBackendDevelopment.Models.Sponsor": {
+        "System.Guid ProjectBackendDevelopment.Models.Sponsor::get_SponsorId()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.Models.Sponsor::get_Name()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.Models.Sponsor::get_TeamId()": {
+          "Lines": {
+            "13": 1
+          },
+          "Branches": []
+        },
+        "ProjectBackendDevelopment.Models.Team ProjectBackendDevelopment.Models.Sponsor::get_Team()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<ProjectBackendDevelopment.Models.SponsorPlayer> ProjectBackendDevelopment.Models.Sponsor::get_SponsorPlayers()": {
+          "Lines": {
+            "15": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Models\\SponsorPlayer.cs": {
+      "ProjectBackendDevelopment.Models.SponsorPlayer": {
+        "System.Guid ProjectBackendDevelopment.Models.SponsorPlayer::get_SponsorId()": {
+          "Lines": {
+            "8": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.Models.SponsorPlayer::get_PlayerId()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "ProjectBackendDevelopment.Models.Player ProjectBackendDevelopment.Models.SponsorPlayer::get_Player()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Models\\Team.cs": {
+      "ProjectBackendDevelopment.Models.Team": {
+        "System.Int32 ProjectBackendDevelopment.Models.Team::get_TeamId()": {
+          "Lines": {
+            "9": 14
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.Models.Team::get_Name()": {
+          "Lines": {
+            "10": 14
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.Models.Team::get_Country()": {
+          "Lines": {
+            "11": 14
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.Models.Team::get_City()": {
+          "Lines": {
+            "12": 14
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<ProjectBackendDevelopment.Models.Sponsor> ProjectBackendDevelopment.Models.Team::get_Sponsors()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Migrations\\20210407163804_all relations.cs": {
+      "ProjectBackendDevelopment.Migrations.allrelations": {
+        "System.Void ProjectBackendDevelopment.Migrations.allrelations::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0
+          },
+          "Branches": []
+        },
+        "System.Void ProjectBackendDevelopment.Migrations.allrelations::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "160": 0,
+            "161": 0,
+            "163": 0,
+            "164": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Migrations\\20210407163804_all relations.Designer.cs": {
+      "ProjectBackendDevelopment.Migrations.allrelations": {
+        "System.Void ProjectBackendDevelopment.Migrations.allrelations::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "276": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Migrations\\SponsorContextModelSnapshot.cs": {
+      "ProjectBackendDevelopment.Migrations.SponsorContextModelSnapshot": {
+        "System.Void ProjectBackendDevelopment.Migrations.SponsorContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "274": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\DTO\\AutoMapping.cs": {
+      "ProjectBackendDevelopment.DTO.AutoMapping": {
+        "System.Void ProjectBackendDevelopment.DTO.AutoMapping::.ctor()": {
+          "Lines": {
+            "9": 2,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\DTO\\PlayerDTO.cs": {
+      "ProjectBackendDevelopment.DTO.PlayerDTO": {
+        "System.Int32 ProjectBackendDevelopment.DTO.PlayerDTO::get_PlayerId()": {
+          "Lines": {
+            "7": 12
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.DTO.PlayerDTO::get_FirstName()": {
+          "Lines": {
+            "8": 12
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.DTO.PlayerDTO::get_LastName()": {
+          "Lines": {
+            "9": 12
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.DTO.PlayerDTO::get_Age()": {
+          "Lines": {
+            "10": 12
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.DTO.PlayerDTO::get_RugNummer()": {
+          "Lines": {
+            "11": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\DTO\\SponsorDTO.cs": {
+      "ProjectBackendDevelopment.DTO.SponsorDTO": {
+        "System.String ProjectBackendDevelopment.DTO.SponsorDTO::get_Name()": {
+          "Lines": {
+            "8": 8
+          },
+          "Branches": []
+        },
+        "System.Int32 ProjectBackendDevelopment.DTO.SponsorDTO::get_TeamId()": {
+          "Lines": {
+            "9": 6
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.Int32> ProjectBackendDevelopment.DTO.SponsorDTO::get_Players()": {
+          "Lines": {
+            "10": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\DTO\\TeamDTO.cs": {
+      "ProjectBackendDevelopment.DTO.TeamDTO": {
+        "System.Int32 ProjectBackendDevelopment.DTO.TeamDTO::get_TeamId()": {
+          "Lines": {
+            "7": 12
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.DTO.TeamDTO::get_Name()": {
+          "Lines": {
+            "8": 12
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.DTO.TeamDTO::get_Country()": {
+          "Lines": {
+            "9": 12
+          },
+          "Branches": []
+        },
+        "System.String ProjectBackendDevelopment.DTO.TeamDTO::get_City()": {
+          "Lines": {
+            "10": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\DataContext\\SponsorContext.cs": {
+      "ProjectBackendDevelopment.DataContext.SponsorContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<ProjectBackendDevelopment.Models.Player> ProjectBackendDevelopment.DataContext.SponsorContext::get_Players()": {
+          "Lines": {
+            "24": 17
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<ProjectBackendDevelopment.Models.Sponsor> ProjectBackendDevelopment.DataContext.SponsorContext::get_Sponsors()": {
+          "Lines": {
+            "25": 18
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<ProjectBackendDevelopment.Models.Team> ProjectBackendDevelopment.DataContext.SponsorContext::get_Teams()": {
+          "Lines": {
+            "26": 17
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<ProjectBackendDevelopment.Models.SponsorPlayer> ProjectBackendDevelopment.DataContext.SponsorContext::get_SponsorPlayers()": {
+          "Lines": {
+            "27": 16
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<ProjectBackendDevelopment.Models.RugNummer> ProjectBackendDevelopment.DataContext.SponsorContext::get_RugNummers()": {
+          "Lines": {
+            "28": 16
+          },
+          "Branches": []
+        },
+        "System.Void ProjectBackendDevelopment.DataContext.SponsorContext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)": {
+          "Lines": {
+            "35": 4,
+            "37": 8,
+            "38": 4,
+            "39": 4
+          },
+          "Branches": []
+        },
+        "System.Void ProjectBackendDevelopment.DataContext.SponsorContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 1,
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "68": 1,
+            "69": 1,
+            "70": 1,
+            "71": 1,
+            "72": 1,
+            "73": 1,
+            "74": 1,
+            "75": 1,
+            "76": 1,
+            "77": 1,
+            "78": 1,
+            "79": 1,
+            "80": 1,
+            "81": 1,
+            "82": 1,
+            "83": 1,
+            "84": 1,
+            "85": 1,
+            "86": 1,
+            "87": 1,
+            "88": 1,
+            "89": 1,
+            "90": 1,
+            "91": 1,
+            "92": 1,
+            "93": 1,
+            "94": 1,
+            "95": 1,
+            "96": 1,
+            "97": 1,
+            "98": 1,
+            "99": 1,
+            "100": 1,
+            "101": 1,
+            "102": 1,
+            "103": 1,
+            "104": 1,
+            "105": 1,
+            "106": 1,
+            "107": 1,
+            "108": 1,
+            "109": 1,
+            "110": 1,
+            "111": 1,
+            "112": 1,
+            "113": 1,
+            "114": 1,
+            "115": 1,
+            "116": 1,
+            "117": 1,
+            "118": 1,
+            "119": 1,
+            "120": 1,
+            "121": 1,
+            "122": 1,
+            "123": 1,
+            "124": 1,
+            "125": 1,
+            "126": 1,
+            "127": 1,
+            "128": 1,
+            "129": 1,
+            "130": 1,
+            "131": 1,
+            "132": 1,
+            "133": 1,
+            "134": 1,
+            "135": 1,
+            "136": 1,
+            "137": 1
+          },
+          "Branches": []
+        },
+        "System.Void ProjectBackendDevelopment.DataContext.SponsorContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<ProjectBackendDevelopment.DataContext.SponsorContext>,Microsoft.Extensions.Options.IOptions`1<ProjectBackendDevelopment.Config.ConnectionStrings>)": {
+          "Lines": {
+            "30": 16,
+            "31": 16,
+            "32": 16,
+            "33": 16
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Controllers\\SponsorController.cs": {
+      "ProjectBackendDevelopment.Controllers.SponsorController": {
+        "System.Void ProjectBackendDevelopment.Controllers.SponsorController::.ctor(Microsoft.Extensions.Logging.ILogger`1<ProjectBackendDevelopment.Controllers.SponsorController>,ProjectBackendDevelopment.Services.ISponsorService)": {
+          "Lines": {
+            "19": 4,
+            "20": 4,
+            "21": 4,
+            "22": 4,
+            "23": 4
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Controllers.SponsorController/<GetPlayers>d__3": {
+        "System.Void ProjectBackendDevelopment.Controllers.SponsorController/<GetPlayers>d__3::MoveNext()": {
+          "Lines": {
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "32": 0,
+            "33": 0,
+            "35": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Controllers.SponsorController/<GetTeams>d__4": {
+        "System.Void ProjectBackendDevelopment.Controllers.SponsorController/<GetTeams>d__4::MoveNext()": {
+          "Lines": {
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "43": 0,
+            "44": 0,
+            "46": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Controllers.SponsorController/<GetSponsors>d__5": {
+        "System.Void ProjectBackendDevelopment.Controllers.SponsorController/<GetSponsors>d__5::MoveNext()": {
+          "Lines": {
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "54": 0,
+            "55": 0,
+            "57": 1
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Controllers.SponsorController/<GetSponsor>d__6": {
+        "System.Void ProjectBackendDevelopment.Controllers.SponsorController/<GetSponsor>d__6::MoveNext()": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "65": 0,
+            "66": 0,
+            "68": 0
+          },
+          "Branches": []
+        }
+      },
+      "ProjectBackendDevelopment.Controllers.SponsorController/<AddSponsor>d__7": {
+        "System.Void ProjectBackendDevelopment.Controllers.SponsorController/<AddSponsor>d__7::MoveNext()": {
+          "Lines": {
+            "73": 1,
+            "74": 1,
+            "75": 1,
+            "77": 0,
+            "78": 0,
+            "80": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\Config\\ConnectionStrings.cs": {
+      "ProjectBackendDevelopment.Config.ConnectionStrings": {
+        "System.String ProjectBackendDevelopment.Config.ConnectionStrings::get_SQL()": {
+          "Lines": {
+            "7": 6
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
