@@ -9308,11 +9308,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopmentTest\\ProjectBackendDevelopmentTest.csproj",
+      "projectUniqueName": "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopmentTest\\ProjectBackendDevelopmentTest.csproj",
       "projectName": "ProjectBackendDevelopmentTest",
-      "projectPath": "d:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopmentTest\\ProjectBackendDevelopmentTest.csproj",
+      "projectPath": "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopmentTest\\ProjectBackendDevelopmentTest.csproj",
       "packagesPath": "C:\\Users\\Ewoud\\.nuget\\packages\\",
-      "outputPath": "d:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopmentTest\\obj\\",
+      "outputPath": "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopmentTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -9335,8 +9335,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "d:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopment\\ProjectBackendDevelopment.csproj": {
-              "projectPath": "d:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopment\\ProjectBackendDevelopment.csproj"
+            "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopment\\ProjectBackendDevelopment.csproj": {
+              "projectPath": "D:\\2020Howest\\2MCT\\Semester2\\BackendDevelopment\\Project\\ProjectBackendDevelopment\\ProjectBackendDevelopment\\ProjectBackendDevelopment.csproj"
             }
           }
         }

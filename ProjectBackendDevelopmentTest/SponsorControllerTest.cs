@@ -52,9 +52,19 @@ namespace ProjectBackendDevelopmentTest
         }
 
         [Fact]
+        public async Task Get_Rugnummers_Should_Return_Ok()
+        {
+            var response = await Client.GetAsync("/api/rugnummers");
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            
+            var rugnummers = JsonConvert.DeserializeObject<List<RugNummer>>(await response.Content.ReadAsStringAsync());
+            Assert.True(rugnummers.Count > 0);
+        }
+
+        [Fact]
         public async Task Get_Specific_Sponsor_Should_Return_Ok()
         {
-            var response = await Client.GetAsync("/api/sponsor/030a93c4-b4b8-4107-4564-08d8f9e626bc");
+            var response = await Client.GetAsync("/api/sponsor/874df1d3-33e1-405f-2918-08d90b9f3372");
             response.StatusCode.Should().Be(HttpStatusCode.OK);
             
             var sponsors = JsonConvert.DeserializeObject<Sponsor>(await response.Content.ReadAsStringAsync());
