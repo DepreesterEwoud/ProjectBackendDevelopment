@@ -35,6 +35,19 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
+
+        [HttpGet]
+        [Route("player/name/{playername}")]
+        public async Task<ActionResult<Player>> GetPlayerByName(string playerName)
+        {
+            try{
+                return new OkObjectResult(await _sponsorService.GetPlayerByName(playerName));
+            }
+            catch(System.Exception ex){
+                throw ex;
+            }
+        }
+        
         [AllowAnonymous]
         [HttpGet]
         [Route("teams")]
@@ -47,7 +60,8 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
-        [AllowAnonymous]
+        
+        
         [HttpGet]
         [Route("sponsors")]
         public async Task<ActionResult<List<Sponsor>>> GetSponsors()
@@ -59,7 +73,7 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
-        [AllowAnonymous]
+
         [HttpGet]
         [Route("rugnummers")]
         public async Task<ActionResult<List<RugNummer>>> GetRugnummers()
@@ -71,7 +85,7 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
-        [AllowAnonymous]
+
         [HttpPut]
         [Route("rugnummer")]
         public async Task<ActionResult<RugNummer>> UpdateRugnummer(RugNummer rugnummer)
@@ -85,7 +99,7 @@ namespace ProjectBackendDevelopment.Controllers
                 return new StatusCodeResult(500);
             }
         }
-        [AllowAnonymous]
+
         [HttpGet]
         [Route("sponsor/{sponsorId}")]
         public async Task<ActionResult<List<Sponsor>>> GetSponsor(Guid sponsorId)
@@ -97,7 +111,7 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
-        [AllowAnonymous]
+
         [HttpPost]
         [Route("sponsors")]
         public async Task<ActionResult<SponsorDTO>> AddSponsor(SponsorDTO sponsor)

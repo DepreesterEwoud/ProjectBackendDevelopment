@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProjectBackendDevelopment.DataContext;
@@ -10,6 +11,7 @@ namespace ProjectBackendDevelopment.Repositories
     public interface IPlayerRepository
     {
         Task<List<Player>> GetPlayers();
+        Task<Player> GetPlayerByName(string name);
     }
 
     public class PlayerRepository : IPlayerRepository
@@ -29,6 +31,18 @@ namespace ProjectBackendDevelopment.Repositories
                 throw ex;
             }
             
+        }
+
+        public async Task<Player> GetPlayerByName(string name)
+        {
+            try
+            {
+                return await _context.Players.Where(a => a.FirstName == name).SingleOrDefaultAsync();
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

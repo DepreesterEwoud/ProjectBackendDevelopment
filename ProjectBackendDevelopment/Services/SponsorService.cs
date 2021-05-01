@@ -12,6 +12,7 @@ namespace ProjectBackendDevelopment.Services
     {
         Task<SponsorDTO> AddSponsor(SponsorDTO sponsor);
         Task<List<PlayerDTO>> GetPlayers();
+        Task<Player> GetPlayerByName(string firstName);
         Task<Sponsor> GetSponsor(Guid sponsorId);
         Task<List<Sponsor>> GetSponsors();
         Task<List<RugNummer>> GetRugnummers();
@@ -82,6 +83,11 @@ namespace ProjectBackendDevelopment.Services
         public async Task<List<PlayerDTO>> GetPlayers()
         {
             return _mapper.Map<List<PlayerDTO>>(await _playerRepository.GetPlayers());
+        }
+
+        public async Task<Player> GetPlayerByName(string firstName)
+        {
+            return await _playerRepository.GetPlayerByName(firstName);
         }
 
         public async Task<List<RugNummer>> GetRugnummers()
