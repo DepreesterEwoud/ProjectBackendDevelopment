@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProjectBackendDevelopment.DataContext;
@@ -10,6 +11,7 @@ using ProjectBackendDevelopment.Services;
 
 namespace ProjectBackendDevelopment.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api")]
     public class SponsorController : ControllerBase
@@ -21,7 +23,7 @@ namespace ProjectBackendDevelopment.Controllers
             _logger = logger;
             _sponsorService = sponsorService;
         }
-
+        [AllowAnonymous]
         [HttpGet]
         [Route("players")]
         public async Task<ActionResult<List<PlayerDTO>>> GetPlayers()
@@ -33,6 +35,7 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
+        [AllowAnonymous]
         [HttpGet]
         [Route("teams")]
         public async Task<ActionResult<List<TeamDTO>>> GetTeams()
@@ -55,6 +58,33 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
+
+        [HttpGet]
+        [Route("rugnummers")]
+        public async Task<ActionResult<List<RugNummer>>> GetRugnummers()
+        {
+            try{
+                return new OkObjectResult(await _sponsorService.GetRugnummers());
+            }
+            catch(System.Exception ex){
+                throw ex;
+            }
+        }
+
+        [HttpPut]
+        [Route("rugnummer")]
+        public async Task<ActionResult<RugNummer>> UpdateRugnummer(RugNummer rugnummer)
+        {
+            try
+            {
+                return new OkObjectResult(await _sponsorService.UpdateRugnummer(rugnummer));
+            }
+            catch (Exception ex)
+            {
+                return new StatusCodeResult(500);
+            }
+        }
+
         [HttpGet]
         [Route("sponsor/{sponsorId}")]
         public async Task<ActionResult<List<Sponsor>>> GetSponsor(Guid sponsorId)

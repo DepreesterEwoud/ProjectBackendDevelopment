@@ -9,6 +9,7 @@ namespace ProjectBackendDevelopment.Models
         [Key]
         public int RugId { get; set; }
         public int RugNummerCijfer { get; set; }
+        [JsonIgnore]
         public Player Player { get; set; }
     }
 }

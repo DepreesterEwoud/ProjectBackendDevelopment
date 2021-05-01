@@ -14,6 +14,8 @@ namespace ProjectBackendDevelopment.Services
         Task<List<PlayerDTO>> GetPlayers();
         Task<Sponsor> GetSponsor(Guid sponsorId);
         Task<List<Sponsor>> GetSponsors();
+        Task<List<RugNummer>> GetRugnummers();
+        Task<RugNummer> UpdateRugnummer(RugNummer rugnummer);
         Task<List<TeamDTO>> GetTeams();
     }
 
@@ -31,6 +33,7 @@ namespace ProjectBackendDevelopment.Services
             _playerRepository = playerRepository;
             _sponsorRepository = sponsorRepository;
             _teamRepository = teamRepository;
+            _rugnummerRepository = rugnummerRepository;
         }
 
         public async Task<Sponsor> GetSponsor(Guid sponsorId)
@@ -79,6 +82,24 @@ namespace ProjectBackendDevelopment.Services
         public async Task<List<PlayerDTO>> GetPlayers()
         {
             return _mapper.Map<List<PlayerDTO>>(await _playerRepository.GetPlayers());
+        }
+
+        public async Task<List<RugNummer>> GetRugnummers()
+        {
+            return await _rugnummerRepository.GetRugNummers();
+        }
+
+        public async Task<RugNummer> UpdateRugnummer(RugNummer rugnummer)
+        {
+            try
+            {
+                await _rugnummerRepository.UpdateRugnummer(rugnummer);
+                return rugnummer;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
