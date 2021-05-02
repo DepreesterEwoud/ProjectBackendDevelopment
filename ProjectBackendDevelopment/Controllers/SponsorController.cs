@@ -36,6 +36,18 @@ namespace ProjectBackendDevelopment.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("player")]
+        public async Task<ActionResult<Player>> AddPlayer(Player player)
+        {
+            try{
+                return new OkObjectResult(await _sponsorService.AddPlayer(player));
+            }
+            catch(System.Exception ex){
+                throw ex;
+            }
+        }
+
         [HttpGet]
         [Route("player/name/{playername}")]
         public async Task<ActionResult<Player>> GetPlayerByName(string playerName)
@@ -60,8 +72,19 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
+        [HttpPost]
+        [Route("team")]
+        public async Task<ActionResult<Team>> AddTeam(Team team)
+        {
+            try{
+                return new OkObjectResult(await _sponsorService.AddTeam(team));
+            }
+            catch(System.Exception ex){
+                throw ex;
+            }
+        }
         
-        
+        [AllowAnonymous]
         [HttpGet]
         [Route("sponsors")]
         public async Task<ActionResult<List<Sponsor>>> GetSponsors()
@@ -100,6 +123,18 @@ namespace ProjectBackendDevelopment.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("rugnummer")]
+        public async Task<ActionResult<RugNummer>> AddRugNummer(RugNummer rugnummer)
+        {
+            try{
+                return new OkObjectResult(await _sponsorService.AddRugNummer(rugnummer));
+            }
+            catch(System.Exception ex){
+                throw ex;
+            }
+        }
+
         [HttpGet]
         [Route("sponsor/{sponsorId}")]
         public async Task<ActionResult<List<Sponsor>>> GetSponsor(Guid sponsorId)
@@ -111,7 +146,7 @@ namespace ProjectBackendDevelopment.Controllers
                 throw ex;
             }
         }
-
+        [AllowAnonymous]
         [HttpPost]
         [Route("sponsors")]
         public async Task<ActionResult<SponsorDTO>> AddSponsor(SponsorDTO sponsor)

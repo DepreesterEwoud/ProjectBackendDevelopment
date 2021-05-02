@@ -41,6 +41,18 @@ namespace ProjectBackendDevelopmentTest
             var players = JsonConvert.DeserializeObject<List<PlayerDTO>>(await response.Content.ReadAsStringAsync());
             Assert.True(players.Count > 0);
         }
+
+        [Fact]
+        public async Task Get_Specific_Player_Should_Return_Ok()
+        {
+            var response = await Client.GetAsync("/api/player/name/ewoud");
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            
+            var player = JsonConvert.DeserializeObject<Player>(await response.Content.ReadAsStringAsync());
+            Assert.NotNull(player);
+        }
+
+
         [Fact]
         public async Task Get_Teams_Should_Return_Ok()
         {

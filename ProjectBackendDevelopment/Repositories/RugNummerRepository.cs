@@ -11,6 +11,7 @@ namespace ProjectBackendDevelopment.Repositories
     {
         Task<List<RugNummer>> GetRugNummers();
         Task<RugNummer> UpdateRugnummer(RugNummer rugnummer);
+        Task<RugNummer> AddRugNummer(RugNummer addRugnummer);
     }
 
     public class RugNummerRepository : IRugNummerRepository
@@ -31,6 +32,12 @@ namespace ProjectBackendDevelopment.Repositories
             _context.RugNummers.Update(rugnummer);
             await _context.SaveChangesAsync();
             return rugnummer;
+        }
+        public async Task<RugNummer> AddRugNummer(RugNummer addRugnummer)
+        {
+            await _context.RugNummers.AddAsync(addRugnummer);
+            await _context.SaveChangesAsync();
+            return addRugnummer;
         }
     }
 }

@@ -12,6 +12,7 @@ namespace ProjectBackendDevelopment.Repositories
     {
         Task<List<Player>> GetPlayers();
         Task<Player> GetPlayerByName(string name);
+        Task<Player> AddPlayer(Player addPlayer);
     }
 
     public class PlayerRepository : IPlayerRepository
@@ -43,6 +44,13 @@ namespace ProjectBackendDevelopment.Repositories
             {
                 throw ex;
             }
+        }
+
+        public async Task<Player> AddPlayer(Player addPlayer)
+        {
+            await _context.Players.AddAsync(addPlayer);
+            await _context.SaveChangesAsync();
+            return addPlayer;
         }
     }
 }

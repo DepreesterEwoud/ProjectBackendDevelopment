@@ -8,6 +8,8 @@ namespace ProjectBackendDevelopment.DTO
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-        public int RugNummer { get; set; }
+        public int RugNummerId { get; set; }
     }
+
+
 }
